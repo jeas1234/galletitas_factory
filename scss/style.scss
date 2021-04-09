@@ -226,9 +226,8 @@ max-height: 230px;
     padding-bottom: 10px;
     padding-left: 5px;
 
-
-
 }
+
 .noticia{
     margin-top: 1em;
     text-align: center;
@@ -342,7 +341,8 @@ h4{
 footer{
 width: 100%;
 position: relative;
-bottom: 0;}
+bottom: 0;
+margin-top: 6em;}
 /* Formulario */
 .formulario{
     border: 3px solid #E11010;
@@ -596,7 +596,7 @@ position:fixed;
 }
 
 .flecha--inferior {
-    margin-right: 0.5em;
+   margin-right: 0.5em;
     font-size: 2.5em;
     text-align: center;
     align-items: center;
@@ -611,6 +611,7 @@ position:fixed;
     align-content: center;
     padding-top: 2px;
     width: 30%;
+    padding-left: 10px;
 }
 
     
