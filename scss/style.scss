@@ -340,12 +340,10 @@ h4{
 }
 footer{
 width: 100%;
-position: relative;
-bottom: 0;
-margin-top: 6em;}
+}
 /* Formulario */
 .formulario{
-    border: 3px solid #E11010;
+    border: 3px solid #0085e0;
     position: relative;
     display: block;
     margin-left: auto;
@@ -355,14 +353,17 @@ margin-top: 6em;}
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    
-    
-    
+    width: 100%;
+    background-image: url("/imagenes/galleta_contactanos.jpg");
+    background-size: cover;
+    background-position: right;
 }
-
+.contactanos_titulo{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
 label{
-    color:#E11010;
+    color:#0085e0;
     font-size: 18px;
     margin:auto;
     width: 100%;
@@ -377,9 +378,13 @@ input{
     tab-size: 15%;
     height: 2em;
     vertical-align:bottom;
-    width   : 60%;
-    width: 100%
-    ;
+    width   :30%;
+}
+
+.formulario_interno{
+  margin: 5em;
+
+
 }
 .imagen_quienes_somos {
 
@@ -401,10 +406,7 @@ input{
     margin-top: 3em;
     margin-bottom: 2em;
 }
-footer{
-position:fixed;
- bottom:0 ;
-}
+
 
 
 /* REDES SOCIALES LATERAL con animacion y traslado */
@@ -530,11 +532,22 @@ position:fixed;
  
 
 /* TIpos productos */
-
+.tipos_titulo{
+    margin-top: 1em;
+    color: #0d6efd;
+}
 .tipo_galleta{
     display: inline-flex;
     flex-direction: column;
     width: 100%;
+    background: #708090;
+}
+
+.titulo_tipo_galleta{
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    padding-top: 5px;
 }
 .img_tipo{
     width: 280px;
@@ -542,10 +555,9 @@ position:fixed;
     object-fit: cover;
 }
 .boton_tipo{
-    background: rgb(255,0,35);
-    background: linear-gradient(187deg, rgba(255,0,35,1) 0%, rgba(134,15,28,0.6082808123249299) 35%, rgba(255,38,0,1) 100%);
-    padding-left: auto;
-    padding-right: 10px;
+
+    background-color: #708090;
+        padding-right: 10px;
 
 }
 
@@ -575,11 +587,8 @@ position:fixed;
 
 .tipo_producto {
     border:solid 1px black;
-    background: rgb(255,0,35);
-    background: linear-gradient(187deg, rgba(255,0,35,1) 0%, rgba(134,15,28,0.6082808123249299) 35%, rgba(255,38,0,1) 100%);
-    
+    background: #708090;
 }
-
 .tipo_galleta {
     border: solid 1px black;
     width: 15%;
@@ -603,6 +612,7 @@ position:fixed;
     padding-top: 2px;
     width: 30%;
     padding-left: 10px;
+    color: white;
 }
 .flecha--superior{
     margin-right: 0.5em;
@@ -611,13 +621,8 @@ position:fixed;
     align-content: center;
     padding-top: 2px;
     width: 30%;
+    color:white;
     padding-left: 10px;
-}
-
-    
-.producto_nombre h1{
-    font-size: 14px;
-    text-align: center;
 }
 
 .container{
@@ -702,7 +707,10 @@ color: black;
         background:cadetblue;
         font-size: 14px;
     }
-
+    input{
+        width: 30%;
+    }
+    
     .menu{
         font-size: 12px;
         display:flex;
@@ -814,7 +822,11 @@ color: black;
       justify-content: center;
 
   }
+  
 
+  input{
+      width: 80%;
+  }
   .footer_redes_sociales{
       justify-content: center;
       width: 100%;
@@ -833,10 +845,7 @@ color: black;
     margin-right: auto;
     padding-left: 10px;
 }
-    footer{
-        position: relative;
-        
-    }
+
 }
 
 // quienes somos //
@@ -882,4 +891,8 @@ overflow:scroll;}
     margin-right: auto;
     padding-left: 10px;
 }
+.formulario{
+    background-image: none;
+}
+
 }
