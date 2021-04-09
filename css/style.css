@@ -452,8 +452,7 @@ input {
 .tipo_galleta {
   display: inline-flex;
   flex-direction: column;
-  width: 100%;
-  background: #708090; }
+  width: 100%; }
 
 .titulo_tipo_galleta {
   text-align: center;
@@ -489,11 +488,11 @@ input {
   overflow: hidden; }
 
 .producto_nombre {
-  border: solid 1px black; }
-
-.tipo_producto {
   border: solid 1px black;
   background: #708090; }
+
+.tipo_producto {
+  border: solid 1px black; }
 
 .tipo_galleta {
   border: solid 1px black;
