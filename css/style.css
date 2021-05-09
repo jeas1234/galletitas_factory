@@ -153,7 +153,8 @@ a:link {
   width: 18%;
   margin-right: 1em;
   overflow: hidden;
-  align-items: center; }
+  align-items: center;
+  box-shadow: 10px 10px 5px black; }
 
 .contenedor_principal {
   width: 100%;
@@ -164,7 +165,8 @@ a:link {
   display: flex;
   justify-content: center;
   margin-top: 2em;
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+}
 
 .titulo_clientes {
   font-size: 20px;
@@ -415,7 +417,10 @@ input {
 /* USO DE GRID */
 .body_grid {
   display: grid;
-  grid-template-areas: "encabezado encabezado encabezado " "H1 H1 H1" " redes redes redes" "clientes clientes clientes";
+  grid-template-areas: "encabezado encabezado encabezado "
+ "H1 H1 H1"
+ " redes redes redes"
+ "clientes clientes clientes";
   grid-template-columns: 100%; }
 
 .redes_publicidad_grid {
@@ -547,7 +552,7 @@ input {
   margin-top: 3em;
   background-color: #708090;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 20px; }
 
 .destacados_contenedor {
   display: inline-block;
@@ -558,7 +563,9 @@ input {
   margin-left: 2em;
   margin-left: 2em;
   background-color: white;
-  border-radius: 20px; }
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px black; }
+
 
 .texto_destacado {
   font-size: 24px;
@@ -691,7 +698,9 @@ input {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px; } }
+    padding-left: 10px; 
+    box-shadow: 10px 10px 5px black;}
+  }
 
 @media only screen and (max-width: 616px) {
   .destacados_contenedor {
