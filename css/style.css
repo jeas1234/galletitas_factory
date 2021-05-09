@@ -102,7 +102,10 @@ a:link {
   color: #0d6efd; }
 
 .logo {
-  display: inline-block; }
+  display: inline-block; 
+  width: 150px;
+   height: 150px;
+}
 
 .fotos_clientes {
   max-height: 230px; }
@@ -136,8 +139,15 @@ a:link {
   width: auto;
   margin: auto;
   padding-top: 5px;
-  padding-bottom: 5px; }
-
+  padding-bottom: 5px;
+  width: 100%;
+  height: 100%;
+}
+.fotos_clientes:hover {
+  -webkit-transform:scale(1.2);transform: scale(1.2);
+  -webkit-border-radius:50%;
+  -webkit-box-shadow: 0px 0px 15px 15px white;
+}
 .clientes {
   flex-wrap: wrap;
   text-align: center;
@@ -466,10 +476,15 @@ input {
   padding-top: 5px; }
 
 .img_tipo {
-  width: 280px;
-  text-align: center;
-  object-fit: cover; }
+  object-fit: cover;
+  align-items: center;
+  display: block;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
 
+  
 .boton_tipo {
   background-color: #708090;
   padding-right: 10px; }
@@ -483,13 +498,15 @@ input {
   justify-content: space-around; }
 
 .contenedor_galleta_tipos {
-  display: flex;
   flex-wrap: wrap;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+ }
 
 .nombre_foto {
   border: solid 1px black;
   box-sizing: border-box;
+  display: block;
   overflow: hidden; }
 
 .producto_nombre {
@@ -502,7 +519,9 @@ input {
 .tipo_galleta {
   border: solid 1px black;
   width: 15%;
-  margin: 2em; }
+  margin: 2em; 
+ ;
+}
 
 .contenedor_cantidad {
   border: solid black 1px;
@@ -641,7 +660,9 @@ input {
   .img_tipo {
     text-align: center;
     overflow: auto;
-    width: 250px; }
+    width: 100%;
+  height: 100%;}
+  
   .footer_horario {
     display: flex;
     flex-direction: column;
@@ -669,7 +690,8 @@ input {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-right: 1em; }
+    margin-right: 1em;
+   }
   .footer_horario {
     margin: 0; }
   .footer_redes_sociales {
@@ -700,6 +722,9 @@ input {
     margin-right: auto;
     padding-left: 10px; 
     box-shadow: 10px 10px 5px black;}
+    .contenedor_noticias {
+      margin-bottom: 20px;
+    }
   }
 
 @media only screen and (max-width: 616px) {
@@ -727,7 +752,8 @@ input {
   .contenedor_principal {
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 20px; }
   .contenedor_noticias {
     width: 90%;
     margin-left: auto;
