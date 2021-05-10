@@ -494,11 +494,16 @@ textarea {
   align-content: center;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
 display:block;
 margin-left: auto;
 margin-right: auto;
 width: 100%;   }
+=======
+}
+>>>>>>> b16b3007f809f60b95759815f5e69e9cca9ed2da
 
+  
 .boton_tipo {
   background-color: #708090;
   padding-right: 10px; }
@@ -744,8 +749,12 @@ width: 100%;   }
     .contenedor_noticias {
       margin-bottom: 20px;
     }
+<<<<<<< HEAD
     
 
+=======
+  }
+>>>>>>> b16b3007f809f60b95759815f5e69e9cca9ed2da
 
 @media only screen and (max-width: 616px) {
   .destacados_contenedor {
