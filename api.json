@@ -1,0 +1,44 @@
+[
+    {
+      "precio": 18,
+      "id": 1,
+      "title": "Galelta Alfajor chispas de chocolate",
+      "img": "/imagenes/alfajor chispas de chocolate.jpg"
+    },
+    {
+      "precio": 18,
+      "id": 2,
+      "title": "Galleta Alfajor",
+      "img": "/imagenes/alfajor_comun.jpg" 
+    },
+    {
+      "precio": 18,
+      "id": 3,
+      "title": "Galleta de Almendra",
+      "img": "/imagenes/almendra.jpg"
+    },
+    {
+      "precio": 18,
+      "id": 4,
+      "title": "Galleta de Pasas",
+      "img": "/imagenes/pasas.jpg"
+    },
+    {
+      "precio": 18,
+      "id": 5,
+      "title": "Galleta trosos de Chocolate",
+      "img": "/imagenes/gotas de chocolate.jpg"
+    },
+    {
+      "precio": 18,
+      "id": 6,
+      "title": "Galleton Cubierta de chocolate",
+      "img": "/imagenes/galleton almendra.jpg"
+    },
+    {
+      "precio": 18,
+      "id": 7,
+      "title": "Galleta Rellenas de Chocolate Negro",
+      "img" : "imagenes/relleno chocolate 2.jpg"
+    }
+  ]
