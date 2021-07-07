@@ -212,7 +212,7 @@ width: 30%;
 .footer_nombre {
   color: #185CA3;
   text-decoration: none;
-  margin: 0.5em 0;
+  padding-top: 1.2em;
 font-size: 20px;
 text-align: center;}
 
@@ -238,7 +238,7 @@ text-align: center;}
   color: #1856A3;
   justify-content: center;
   text-align: center;
-  margin-top: 0.5em;}
+  margin-top: 1em;}
 
 /* CLIENTES PAGINA PRINCIPAL */
 /* tipos de galletas */
