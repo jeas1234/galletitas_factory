@@ -9,7 +9,7 @@ let carrito = {}
 
 // Eventos
 // El evento DOMContentLoaded es disparado cuando el documento HTML ha sido completamente cargado y parseado
-document.addEventListener('DOMContentLoaded',() => { fetchData() });
+$ (document).ready(function() { fetchData() });
 cards.addEventListener('click', e => { addCarrito(e) });
 items.addEventListener('click', e => { btnAumentarDisminuir(e) })
 
@@ -117,11 +117,16 @@ const pintarFooter = () => {
 
     footer.appendChild(fragment)
 
-    const boton = document.querySelector('#vaciar-carrito')
-    boton.addEventListener('click', () => {
+    $('#vaciar-carrito').on("click",()=> {
         carrito = {}
         pintarCarrito()
     })
+    
+    // const boton = document.querySelector('#vaciar-carrito')
+    // boton.addEventListener('click', () => {
+    //     carrito = {}
+    //     pintarCarrito()
+    // })
 
 }
 
@@ -147,3 +152,7 @@ const btnAumentarDisminuir = e => {
     e.stopPropagation()
 }
 
+/* resnponsive Menu */
+
+$("navegacion").on("click", ()=>{
+alert("funciono")})
