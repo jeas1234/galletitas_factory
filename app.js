@@ -7,13 +7,10 @@ const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 let carrito = {}
 
-// Eventos
-// El evento DOMContentLoaded es disparado cuando el documento HTML ha sido completamente cargado y parseado
 $ (document).ready(function() { fetchData() });
 cards.addEventListener('click', e => { addCarrito(e) });
 items.addEventListener('click', e => { btnAumentarDisminuir(e) })
 
-// Traer productos
 const fetchData =async() =>{
     try{
         const res = await fetch("api.json")
@@ -29,7 +26,6 @@ const fetchData =async() =>{
     }
 }
 
-// Pintar productos
 const pintarCards = data => {
     data.forEach(producto => {
         templateCard.querySelector('h5').textContent = producto.title
@@ -43,25 +39,20 @@ const pintarCards = data => {
     console.log(data)
 
 }
-// Agregar al carrito
 const addCarrito = e => {
     if (e.target.classList.contains('btn-dark')) {
-        // console.log(e.target.dataset.id)
-        // console.log(e.target.parentElement)
         setCarrito(e.target.parentElement)
     }
     e.stopPropagation()
 }
 
 const setCarrito = item => {
-    // console.log(item)
     const producto = {
         title: item.querySelector('h5').textContent,
         precio: item.querySelector('p').textContent,
         id: item.querySelector('button').dataset.id,
         cantidad: 1
     }
-    // console.log(producto)
     if (carrito.hasOwnProperty(producto.id)) {
         producto.cantidad = carrito[producto.id].cantidad + 1
     }
@@ -80,7 +71,7 @@ const pintarCarrito = () => {
         templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
         templateCarrito.querySelector('span').textContent = producto.precio * producto.cantidad
         
-        //botones
+        //
         templateCarrito.querySelector('.btn-info').dataset.id = producto.id
         templateCarrito.querySelector('.btn-danger').dataset.id = producto.id
 
@@ -121,12 +112,7 @@ const pintarFooter = () => {
         carrito = {}
         pintarCarrito()
     })
-    
-    // const boton = document.querySelector('#vaciar-carrito')
-    // boton.addEventListener('click', () => {
-    //     carrito = {}
-    //     pintarCarrito()
-    // })
+
 
 }
 

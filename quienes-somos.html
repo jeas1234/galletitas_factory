@@ -15,20 +15,27 @@
 <body>
     <nav class="encabezados_menu" >
         <ul class="nav__menu">
-            <li  class="nav__menu__desplegable"><a href="index.html"><img src="imagenes/galletitas factory logo.png" class="logo"> </a> </li>            
-            <li  class="nav__menu__desplegable" id=index><a href=index.html>Inicio</a></li>
-            <li class="nav__menu__desplegable" id=quienes_somos><a href="quienes-somos.html">Quienes Somos</a></li>
-            <li  class="nav__menu__desplegable" id=tipos><a href=tipos.html>Tipos</a></li>
-            <li  class="nav__menu__desplegable" id=clientes><a href="clientes.html">Clientes</a></li>
-            <li  class="nav__menu__desplegable" id=contactanos><a href="contactanos.html">Contactanos</a></li>
+            <div class="nav_menu_desplegable_logo">
+                <li  class="nav__menu__desplegable menu_logo" logo><a href="index.html" class="posicion_logo"><img src="imagenes/galletitas factory logo.png" class="logo"> </a> </li> 
+            </div>
+            <div class="nav_menu_desplegable_pag">
+                <li  class="nav__menu__desplegable" id=index><a href=index.html>Inicio</a></li>
+                <li  class="nav__menu__desplegable" id=tipos><a href=tipos.html>Tipos</a></li>
+                <li  class="nav__menu__desplegable" id=clientes><a href="clientes.html">Clientes</a></li>
+                <li  class="nav__menu__desplegable" id=contactanos><a href="contactanos.html">Contactanos</a></li>
+                <li class="nav__menu__desplegable" id=quienes_somos><a href="quienes-somos.html">Quienes Somos</a></li>
+            </div>                    
         </ul>
+        <div id="navegacion" class="navegacion_completa">
+            <i class="fas fa-bars navegacion" id="boton_navegacion">   Menu </i>
+        </div>
     </nav>
  <h1 class="quienes_somos_titulo"> Quienes Somos
 </h1>
 
-<p class="quienes_somos_parrafo">Bienvenidos a nuestro dulce mundo con sabor a galletitas, queremos cumplir con todos tus antojos y ser los cómplices en tus momentos.
+<p class="quienes_somos_parrafo">Bienvenidos a nuestro dulce mundo con sabor a galletitas, queremos cumplir con todos tus antojos y ser los cómplices en tus momentos. <br><br>
 
-Somos una empresa chica con una gran variedad de sabores, con metas de ser una empresa líder en Uruguay.
+Somos una empresa chica con una gran variedad de sabores, con metas de ser una empresa líder en Uruguay. <br><br>
 
 Cada semana estamos creando una nueva combinación para que tu paladar explote con un nuevo sabor.</p>
 <img class="imagen_quienes_somos" src="imagenes/galletitas factory logo.png" > 
@@ -61,5 +68,9 @@ Cada semana estamos creando una nueva combinación para que tu paladar explote c
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script src="app2.js"></script>
+
 </body>
 </html> 
