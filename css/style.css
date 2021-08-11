@@ -710,5 +710,12 @@ border-radius: 100%; }
 .logo{
 width:8em
 } 
+.destacados_principal {
+  background-color: #185CA3;
+  margin-top: 0;
+}
+.navegacion {
+  margin-bottom: 0;
+}   
 }
   
